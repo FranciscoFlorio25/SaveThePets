@@ -1,0 +1,11 @@
+{
+    "Publicaciones": {
+        "Publicacion1": {
+            "Tipo": "Adopcion",
+            "Perrito": "Juancho",
+            "Raza": "Calle",
+            "Edad": "10",
+            "Contacto": "raul@gmail.com"
+        }
+    }
+}
