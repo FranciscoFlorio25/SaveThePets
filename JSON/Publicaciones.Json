@@ -1,11 +1,94 @@
 {
     "Publicaciones": {
         "Publicacion1": {
+            "idMascota": "1",
             "Tipo": "Adopcion",
-            "Perrito": "Juancho",
-            "Raza": "Calle",
+            "nombre": "Juancho",
+            "Raza": "mestizo",
             "Edad": "10",
-            "Contacto": "raul@gmail.com"
+            "imagen":"",
+            "Contacto": "raul@gmail.com",
+            "Direccion": "batallon 800, capital federal, buenos aires",
+            "Telefono": "11555600",
+            "Cuidados": {
+                "Vacunas": [],
+                "DetalleCuidado": "Es invalido, necesita una silla con ruedas para desplazarse."
+            }
+        },
+        "Publicacion2": {
+            "idMascota": "2",
+            "Tipo": "Adopcion",
+            "nombre": "Coki",
+            "Raza": "mestizo",
+            "Edad": "2",
+            "imagen":"",
+            "Contacto": "gimena@yahoo.com.ar",
+            "Direccion": "cordoba 1000, san miguel, buenos aires",
+            "Telefono": "11228894",
+            "Cuidados": {
+                "Vacunas": ["Rabia"],
+                "DetalleCuidado": "Esta castrado, se baña cada vez que sea necesario, necesita medicamente para una infección"
+            }
+        },
+        "Publicacion3": {
+            "idMascota": "3",
+            "Tipo": "Adopcion",
+            "nombre": "Canela",
+            "Raza": "Schanuser Mini",
+            "Edad": "5",
+            "imagen":"",
+            "Contacto": "dfrancisco25@hotmail.com",
+            "Direccion": "avenida mitre 500, polvorines, buenos aires",
+            "Telefono": "15555910",
+            "Cuidados": {
+                "Vacunas": ["Rabia","Tos canina", "Parvovirus"],
+                "DetalleCuidado": "Se baña una vez por semana, hay que cepillarle los dientes y cortarle las uñas"
+            }
+        },
+        "Publicacion4": {
+            "idMascota": "4",
+            "Tipo": "Perdido",
+            "nombre": "Puchina",
+            "Raza": "Caniche",
+            "Edad": "2",
+            "imagen": "",
+            "Direccion": "Presidente peron 451, san miguel, buenos aires",
+            "Contacto": "MicaBellegia@gmail.com",
+            "Telefono": "515111120",
+            "Detalle": {
+                "LugarSuceso":"Ascuenaga al 500, Muñiz, buenos aires",
+                "FechaSuceso": "12/5/2022"
+            }
+        },
+        "Publicacion5": {
+            "idMascota": "5",
+            "Tipo": "Perdido",
+            "nombre": "Chumi",
+            "Raza": "BullDog",
+            "Edad": "1",
+            "Contacto": "Rico@gmail.com",
+            "imagen": "",
+            "Direccion": "gelly y obes 551, muñiz, buenos aires",
+            "Telefono": "2111005",
+            "Detalle": {
+                "LugarSuceso":"Presidente Peron al 5551, san miguel, buenos aires",
+                "FechaSuceso": "12/5/2023"
+            }
+        },
+        "Publicacion6": {
+            "idMascota": "6",
+            "Tipo": "Perdido",
+            "nombre": "Chopito",
+            "Raza": "mestizo",
+            "Edad": "11",
+            "Contacto": "Jasinto@gmail.com",
+            "imagen": "",
+            "Direccion": "Marco Ilia 450, san miguel, buenos aires",
+            "Telefono": "11115000",
+            "Detalle": {
+                "LugarSuceso":"Mitre al 1150, polvirones, buenos aires",
+                "FechaSuceso": "6/1/2023"
+            }
         }
     }
 }
