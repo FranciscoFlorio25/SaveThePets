@@ -1,0 +1,22 @@
+{
+  "name": "savethepets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoFlorio25/SaveThePets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranciscoFlorio25/SaveThePets/issues"
+  },
+  "homepage": "https://github.com/FranciscoFlorio25/SaveThePets#readme",
+  "dependencies": {
+    "leaflet": "^1.9.3"
+  }
+}

@@ -8,6 +8,10 @@
     --color-secundario:#2c68a3;
 }
 
+#mapa{
+    height: 400px;
+}
+
 *{
     margin: 0;
     padding-left: 0;
