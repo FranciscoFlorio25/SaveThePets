@@ -6,6 +6,7 @@
     --color-secundario:#2c68a3;
 }
 
+
 *,
 ::before,
 ::after {
@@ -17,37 +18,27 @@
 }
 
 body {
-
-     /* fallback for old browsers */
+    height: 100vh;
     background: rgb(170,80,212);
+    background: linear-gradient(0deg, rgba(170,80,212,1) 0%, rgba(44,104,163,1) 100%); 
 
-    background: -webkit-linear-gradient(0deg, rgba(170,80,212,1) 0%, rgba(44,104,163,1) 100%);
-    /* Chrome 10-25, Safari 5.1-6 */
-    
-    background: linear-gradient(to left, #aa50d4, #2c68a3);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    height: 657px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'roboto';
-    overflow: hidden;
 }
 
 h1 {
-    margin-top: 0px;
     font-family: 'Merriweather Sans';
-    text-align: center;
-    font-weight: 900;
-    font-size: 30px;
-    color: var(--color-secundario);
+    text-align: left;
+    margin-top:10px;
+    font-size: 25px;
+    color: var(--color-principal);
 }
 
 form {
-    width: 25%;
     background: #fff;
-    padding: 35px 25px;
+    padding: 15px 35px;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
 }
@@ -66,37 +57,38 @@ form .grupo {
 input {
     width: 100%;
     background: none;
-    font-size: 15px;
     padding: 10px 0px 5px 0px;
     display: block;
     border: none;
     border-bottom: 1px solid var(--color-principal);
     font-weight: 100;
     font-size: 18px;
-    color: #286393;
+    color: #000000;
 }
 
 input:focus {
     outline: none;
-    color: #3d635e;
+    color: #000000;
 }
 
 label {
+    margin-bottom: 10px;
     color: #c0c0c0;
     font-size: 15px;
     font-weight: 500;
     position: absolute;
     left: 2px;
-    top: 10px;
+    top: 15px;
     transition: 0.5s ease-in-out all;
     pointer-events: none;
 }
 
 input:focus~label,
 input:valid~label {
-    top: -14px;
-    font-size: 13px;
-    color:var(--color-secundario);
+    top: -11px;
+    font-size: 11px;
+    color: var(--color-secundario);
+    margin-bottom: 5px;
 }
 
 .barra {
@@ -110,9 +102,9 @@ input:valid~label {
     content: "";
     height: 2px;
     width: 0px;
-    bottom: 0;
+    bottom: 0; 
     position: absolute;
-    background: linear-gradient(to bottom, #ffd166, #06d6a0);
+    background: linear-gradient(to bottom, #06d6a0, #ffd166 );
     transition: 0.3s ease width;
     left: 0px;
 }
@@ -140,17 +132,62 @@ button {
 
 button:hover{
     cursor: pointer;
-    width: 85%;
 }
 
 .finalrTextForm  {
     font-size: 12px;
     display: flex;
     justify-content: center;
-    color:var(--color-principal);
+    color:#1e5acc;
     margin:5px 10px;
 }
 
-a:hover  {
-    text-decoration: underline;
+/* Clases para verifición con javascript*/
+
+.siVerificated {
+    border-bottom: 1px solid #40940b;
+
+}
+
+.noVerificated {
+    border-bottom: 1px solid #f44254;
+}
+
+/* Estilos de warnings*/
+
+.warning {
+    font-size: 10px;
+    color: #f44254;
+    display: flex;
+    justify-content: start;
+    margin-top: 3px;
+}
+
+.warningIncomplete {
+    font-size: 15px;
+    color: #f44254;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+/* Flecha de back */
+.backPadre {
+    margin-top: 2%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background: var(--color-principal);
+    width:16%;
+    border-radius: 100px;
+
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    color:#fff;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
