@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Save The Pets</title>
-    <link rel="stylesheet" href="/Styles/Index.css">
     <link rel="stylesheet" href="/Styles/header/header.css">
+    <link rel="stylesheet" href="/Styles/Publicaciones/publicaciones.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
 
-    <header>
+    <header id="nav-Principal">
       <h1>Save The Pets</h1>
       <nav class="nav-Principal">
         <ul class="nav--Items">
@@ -24,17 +24,13 @@
   </header>
 
   <main>
-    <div class="container">
-      <div class="contanier-texto-botones-principal">
-      <p>¡Encuentra tu compañero ideal o encuentra al tuyo perdido! Nuestro portal está aquí para ayudarte a encontrar a esos adorables animales.</p>
-      <div class="contenedor-botones-main">
-        <a href="Publicaciones.html"><button>Ver Publicaciones</button></a>
-        <!-- <button>Publicar</button> -->
-      </div>
-      </div>
-      <img src="/img/dog-principal.png" />
-    </div>
-  </main>
-  </body>
+    <div id="publicaciones" class="contenedor-publicaciones"></div>
 
+    <div id="contendor-info" class="contenedor-info"></div>
+
+  </main>
+
+  <script src="/js/menuSticky.js" type="module"></script>
+  <script src="/js/publicaciones.js" type="module"></script>
+  </body>
 </html>

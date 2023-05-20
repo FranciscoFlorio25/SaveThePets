@@ -1,12 +1,12 @@
 {
-    "Publicaciones": {
-        "Publicacion1": {
+    "Publicaciones": [
+        {
             "idMascota": "1",
             "Tipo": "Adopcion",
             "nombre": "Juancho",
-            "Raza": "mestizo",
-            "Edad": "10",
-            "imagen":"img/MascotasPublicaciones/Poligraf_Poligrafovich.jpg",
+            "raza": "mestizo",
+            "edad": "10",
+            "imagen":"img/MascotasPublicaciones/doggie.png",
             "Contacto": "raul@gmail.com",
             "Direccion": "batallon 800, capital federal, buenos aires",
             "Telefono": "11555600",
@@ -15,27 +15,27 @@
                 "DetalleCuidado": "Es invalido, necesita una silla con ruedas para desplazarse."
             }
         },
-        "Publicacion2": {
+        {
             "idMascota": "2",
             "Tipo": "Adopcion",
             "nombre": "Coki",
-            "Raza": "mestizo",
-            "Edad": "2",
+            "raza": "mestizo",
+            "edad": "2",
             "imagen":"img/MascotasPublicaciones/purina-brand-perros-mestizos-amor-y-responsabilidad.jpg",
             "Contacto": "gimena@yahoo.com.ar",
             "Direccion": "cordoba 1000, san miguel, buenos aires",
             "Telefono": "11228894",
             "Cuidados": {
                 "Vacunas": ["Rabia"],
-                "DetalleCuidado": "Esta castrado, se baña cada vez que sea necesario, necesita medicamente para una infección"
+                "DetalleCuidado": "Esta castrado, se baña cada vez que sea necesario, necesita medicamento para una infección"
             }
         },
-        "Publicacion3": {
+        {
             "idMascota": "3",
             "Tipo": "Adopcion",
             "nombre": "Canela",
-            "Raza": "Schanuser Mini",
-            "Edad": "5",
+            "raza": "Schanuser Mini",
+            "edad": "5",
             "imagen":"img/MascotasPublicaciones/descargar.jpg",
             "Contacto": "dfrancisco25@hotmail.com",
             "Direccion": "avenida mitre 500, polvorines, buenos aires",
@@ -45,50 +45,50 @@
                 "DetalleCuidado": "Se baña una vez por semana, hay que cepillarle los dientes y cortarle las uñas"
             }
         },
-        "Publicacion4": {
+        {
             "idMascota": "4",
             "Tipo": "Perdido",
             "nombre": "Puchina",
-            "Raza": "Caniche",
-            "Edad": "2",
+            "raza": "Caniche",
+            "edad": "2",
             "imagen": "img/MascotasPublicaciones/My_cousin's_poodle_is_perched_and_not_knowing_what_to_make_of_me._(5898350017).jpg",
             "Direccion": "Presidente peron 451, san miguel, buenos aires",
             "Contacto": "MicaBellegia@gmail.com",
             "Telefono": "515111120",
             "Detalle": {
-                "LugarSuceso":"Ascuenaga al 500, Muñiz, buenos aires",
+                "LugarSuceso":"Ascuenaga al 500, Muñiz, Buenos Aires",
                 "FechaSuceso": "12/5/2022"
             }
         },
-        "Publicacion5": {
+        {
             "idMascota": "5",
             "Tipo": "Perdido",
             "nombre": "Chumi",
-            "Raza": "BullDog",
-            "Edad": "1",
+            "raza": "BullDog",
+            "edad": "2",
             "Contacto": "Rico@gmail.com",
             "imagen": "img/MascotasPublicaciones/1200px-Bulldog_inglese.jpg",
             "Direccion": "gelly y obes 551, muñiz, buenos aires",
             "Telefono": "2111005",
             "Detalle": {
-                "LugarSuceso":"Presidente Peron al 5551, san miguel, buenos aires",
+                "LugarSuceso":"Presidente Peron al 5551, san miguel, Buenos Aires",
                 "FechaSuceso": "12/5/2023"
             }
         },
-        "Publicacion6": {
+        {
             "idMascota": "6",
             "Tipo": "Perdido",
             "nombre": "Chopito",
-            "Raza": "mestizo",
-            "Edad": "11",
+            "raza": "mestizo",
+            "edad": "11",
             "Contacto": "Jasinto@gmail.com",
             "imagen": "img/MascotasPublicaciones/cane-meticcio.jpg",
             "Direccion": "Marco Ilia 450, san miguel, buenos aires",
             "Telefono": "11115000",
             "Detalle": {
-                "LugarSuceso":"Mitre al 1150, polvirones, buenos aires",
+                "LugarSuceso":"Mitre al 1150, polvirones, Buenos Aires",
                 "FechaSuceso": "6/1/2023"
             }
         }
-    }
+    ]
 }

@@ -1,0 +1,126 @@
+:root{
+    --color-principal:#aa50d4;
+    --color-secundario:#2c68a3;
+}
+
+*{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color:inherit;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 1;
+}
+
+header h1{
+    cursor:cell;
+    color:#000;
+    margin:4px 4px;
+    font-size: 2em;
+    font-weight:600;
+    margin-left:40px;
+    margin-top:8px;
+    padding:10px 15px;
+    user-select: none;
+    border-radius: 20px;
+    background:#EF476F;
+    border: 3px solid #000;
+    box-shadow: 7px 10px #000;
+    font-family: 'Rubik', sans-serif;
+}
+
+header h1:hover{
+    color:#000;
+    background:#fff;
+    border-radius: 20px;
+    border: 3px solid #000;
+    box-shadow: 9px 10px #000;
+}
+
+/* NAVEGACION */
+
+.nav-Principal{
+    display: flex;
+    margin-top:18px;
+    margin-right:40px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 10px;
+    justify-content: right;
+    border:1px solid black;
+    background:#fff;
+    box-shadow: 5px 5px black;
+}
+
+.nav-Principal ul{
+
+    display: flex;
+    font-size:14px;
+    cursor:pointer;
+    margin-top:18px;
+    margin-right:40px;
+    user-select: none;
+    margin-bottom:10px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+.nav-Principal ul li{
+    padding-left:8px;
+    padding-right:8px;
+    cursor:url("/img/cursor/mano.png"), pointer;
+}
+
+.nav-Principal ul li a:hover{
+    border-bottom: 0.8px solid black;
+    cursor:url("/img/cursor/mano.png"), pointer;
+}
+
+.botones-registroLogin{
+    height:35px;
+    margin-top:6px;
+    background:#feffe0;
+    border-radius: 10px;
+    border:1px solid black;
+    box-shadow: 5px 7px #000;
+}
+
+.nav-Principal button{
+   
+    /*  Ubicacion */
+    padding-left:10px;
+    padding-right:10px;
+    margin-bottom:10px;
+
+    /* Estilos */
+    border:none;
+    height:100%;
+    color:#000;
+    outline: none;
+    font-size:14px;
+    background:none;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    cursor:url("/img/cursor/mano.png"), pointer;
+}
+
+.nav-Principal button:hover{
+    background:var(--color-principal);
+    color:#fff;
+}
