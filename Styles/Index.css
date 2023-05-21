@@ -28,7 +28,7 @@ a{
 
 body{
     display: flex;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background:#feffe0;
     flex-direction: column;
 }

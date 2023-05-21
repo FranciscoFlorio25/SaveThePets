@@ -159,3 +159,61 @@ h3, h2{
     margin-bottom: 30px;
     font-family: 'Rubik', sans-serif;
 }
+
+@media (max-width: 740px) {
+    .contenedor-info {
+        top:85px;
+        width:60%;
+        right: 10px;
+        height: 75%;
+        margin-top:22%;
+        padding-bottom:20px;
+        position: fixed;
+        background:#fff;
+        border-radius: 25px;
+        text-align: center;
+        font-size: small;
+    }
+    .contenedor-info a {
+        text-align: center;
+        font-size: medium;
+    }
+    .contenedor-info h2 {
+        text-align: center;
+        font-size: medium;
+    }
+    .contenedor-info p {
+        text-align: center;
+        font-size: medium;
+    }
+    .contenedor-info ul {
+        text-align: center;
+        font-size: medium;
+    }
+    .contenedor-info img {
+        height: min-content;
+    }
+    .tarjeta-mascota{
+        width: 90%;
+        margin:10px;
+        font-size: small;
+        text-align: center;
+    }
+    .tarjeta-mascota button {
+        font-size: small;
+        text-align: center;
+    }
+    .tarjeta-mascota img {
+        display: flex;
+        flex-direction: column;
+    }
+    .tarjeta-mascota ul li{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1.2rem;
+        align-items: center;
+        text-align: center;
+    }
+    .adopcion{font-size: small; text-align: center;}
+    .perdido{font-size: small; text-align: center;}
+}
