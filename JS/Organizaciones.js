@@ -7,6 +7,12 @@ function initMap() {
       center: buenosAires,
       zoom: 12
     });
+
+    // tileLayer
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
   
     // Establecer el límite mínimo de zoom
     var minZoom = 10;
@@ -32,9 +38,10 @@ function initMap() {
     fetch('/JSON/Organizaciones.json')
     .then(response => response.json())
     .then(data => {
-      for (let key in data) {
-        if (data.hasOwnProperty(key)) {
-          let organizacion = data[key];
+      const organizaciones = data['Organizaciones'][0];
+      for (let key in organizaciones) {
+        if (organizaciones.hasOwnProperty(key)) {
+          let organizacion = organizaciones[key];
   
             // Crear una carta para mostrar la información de la organización
             let card = document.createElement('div');
@@ -62,6 +69,8 @@ function initMap() {
         console.error('Error al cargar el archivo JSON:', error);
       });
   }
+
+
   // Inicializar el mapa cuando se cargue la página
   initMap();
   
