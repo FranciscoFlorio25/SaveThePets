@@ -10,7 +10,22 @@
 
 #mapa{
     height: 400px;
+    width: 400px;
 }
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .centrado {
+    text-align: center;
+    background-color: lightgray;
+    padding: 5px;
+  }
+
 
 *{
     margin: 0;
