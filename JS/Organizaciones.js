@@ -7,7 +7,7 @@ function initMap() {
   // Limitar mapa a la provincia de Buenos Aires
   var bounds = L.latLngBounds(
     L.latLng(-41, -64),
-    L.latLng(-33, -56) 
+    L.latLng(-33, -56)
   );
   map.setMaxBounds(bounds);
   map.on('drag', function() {
@@ -20,47 +20,68 @@ function initMap() {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
   }).addTo(map);
 
+  var searchInput = document.getElementById('search-input'); // Mover esta línea aquí
+
   // Cargar archivo JSON de Organizaciones
   fetch('/JSON/Organizaciones.json')
     .then(response => response.json())
     .then(data => {
-      const organizaciones = data['Organizaciones'][0];
-      for (let key in organizaciones) {
-        if (organizaciones.hasOwnProperty(key)) {
-          let organizacion = organizaciones[key];
+      const organizaciones = data['Organizaciones'];
+      let filteredOrganizaciones = [...organizaciones];
 
-          // Normalizar la dirección y obtener las coordenadas
-          normalizeAddress(organizacion.Direccion)
+      // Función para renderizar las cartas de las organizaciones
+      function renderCards() {
+        // Limpiar el contenedor de las cartas
+        let cardContainer = document.getElementById('card-container');
+        cardContainer.innerHTML = '';
+
+        filteredOrganizaciones.forEach(organizacion => {
+          // Verificar si la organización tiene alguna actividad que coincida con el término de búsqueda
+          let actividades = organizacion.Actividades.map(actividad => actividad.toLowerCase());
+          let searchTerm = searchInput.value.toLowerCase();
+
+          if (actividades.some(actividad => actividad.includes(searchTerm))) {
+            // Crear una carta para mostrar la información de la organización
+            let card = document.createElement('div');
+            card.classList.add('card');
+
+            let descripcionElement = document.createElement('p');
+            descripcionElement.textContent = 'Descripción: ' + organizacion.Descripción;
+            card.appendChild(descripcionElement);
+
+            let actividadesElement = document.createElement('ul');
+            actividadesElement.classList.add('actividades-list');
+            organizacion.Actividades.forEach(actividad => {
+              let actividadItem = document.createElement('li');
+              actividadItem.textContent = actividad;
+              actividadesElement.appendChild(actividadItem);
+            });
+            card.appendChild(actividadesElement);
+
+            let direccionElement = document.createElement('p');
+            direccionElement.textContent = 'Dirección: ' + organizacion.Direccion;
+            card.appendChild(direccionElement);
+
+            // Agregar la carta al contenedor correspondiente
+            cardContainer.appendChild(card);
+
+            // Utilizar las coordenadas para agregar un marcador al mapa
+            normalizeAddress(organizacion.Direccion)
             .then(direccionNormalizada => {
-              // Crear una carta para mostrar la información de la organización
-              let card = document.createElement('div');
-              card.classList.add('card');
-
-              let descripcionElement = document.createElement('p');
-              descripcionElement.textContent = 'Descripción: ' + organizacion.Descripción;
-              card.appendChild(descripcionElement);
-
-              let actividadesElement = document.createElement('p');
-              actividadesElement.textContent = 'Actividades: ' + organizacion.Acividades;
-              card.appendChild(actividadesElement);
-
-              let direccionElement = document.createElement('p');
-              direccionElement.textContent = 'Dirección: ' + organizacion.Direccion;
-              card.appendChild(direccionElement);
-
-              // Agregar la carta al contenedor correspondiente
-              let cardContainer = document.getElementById('card-container');
-              cardContainer.appendChild(card);
-
-              // Utilizar las coordenadas para agregar un marcador al mapa
-              var marker = L.marker(direccionNormalizada.coordenadas).addTo(map);
+          
+              var markerIcon = L.icon({
+                iconUrl: "/img/marcador/pngwing.com.png",
+                iconSize: [35, 35]
+              });
+          
+              var marker = L.marker(direccionNormalizada.coordenadas, { icon: markerIcon}).addTo(map);
               marker.bindPopup(organizacion.Descripción);
-
+          
               // Hacer zoom en el marcador al hacer clic en él
               marker.on('click', function() {
                 map.flyTo(direccionNormalizada.coordenadas, 15);
               });
-
+          
               // Hacer zoom en el marcador al hacer clic en la tarjeta
               card.addEventListener('click', function() {
                 map.flyTo(direccionNormalizada.coordenadas, 15);
@@ -69,8 +90,23 @@ function initMap() {
             .catch(error => {
               console.error('Error al normalizar la dirección:', error);
             });
-        }
+          }
+        });
       }
+
+      renderCards();
+
+      // Buscar organizaciones por actividad
+      searchInput.addEventListener('input', function() {
+        filteredOrganizaciones = organizaciones.filter(organizacion => {
+          let actividades = organizacion.Actividades;
+          let searchTerm = searchInput.value.toLowerCase();
+
+          return actividades.some(actividad => actividad.toLowerCase().includes(searchTerm));
+        });
+
+        renderCards();
+      });
     })
     .catch(error => {
       console.error('Error al cargar el archivo JSON:', error);
@@ -85,7 +121,7 @@ function normalizeAddress(direccion) {
   return fetch(url)
     .then(response => response.json())
     .then(data => {
-      if(data.direccionesNormalizadas.length > 0) {
+      if (data.direccionesNormalizadas.length > 0) {
         var latitud = data.direccionesNormalizadas[0].coordenadas.y;
         var longitud = data.direccionesNormalizadas[0].coordenadas.x;
         return {
@@ -94,7 +130,6 @@ function normalizeAddress(direccion) {
       }
     });
 }
-
 
 // Inicializar el mapa cuando se cargue la página
 initMap();

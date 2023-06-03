@@ -1,36 +1,34 @@
 {
-    "Organizaciones":[
-        {
-            "Organizacion1":{
-                "IdOrganizacion":"1",
-                "Descripción": "Lugar amplio, frente con rejas verdes y parque donde los animales pueden correr",
-                "Acividades": "Se ofrece castracion, vacunacion y servicios de veterinaria",
-                "Direccion":"gelly y obes 800, muñiz"
-            },
-            "Organizacion2":{
-                "IdOrganizacion":"2",
-                "Descripción": "Una granja, donde los animales estan compartiendo espacio y una buena vida",
-                "Acividades": "Servicios de veterinaria, Cuidados, adopcion y servicio de guarderia",
-                "Direccion":"Callao y corrientes, caba"
-            },
-            "Organizacion3":{
-                "IdOrganizacion":"3",
-                "Descripción": "Tenemos varios recintos, donde dejamos a los animales rescatados o encontrados",
-                "Acividades": "Adopción, rescate y busqueda de animales perdidos",
-                "Direccion":"Corrientes 1005, moron"
-            },
-            "Organizacion4":{
-                "IdOrganizacion":"4",
-                "Descripción": "Es una veterinaria publica donde tratamos a mascotas en necesidad",
-                "Acividades": "Todo tipo de servicios de veterinaria, incluyendo castración y vacunación",
-                "Direccion":"loria 300, lomas"
-            },
-            "Organizacion5":{
-                "IdOrganizacion":"5",
-                "Descripción": "Cuartel de proteccion animal, lugar donde se gestionan casos de mascotas en abandono o maltratadas",
-                "Acividades": "servicios de rescate y cuidado, adopción y proteccion animal",
-                "Direccion":"Cordoba 200, caba"
-            }
-        }
+    "Organizaciones": [
+      {
+        "IdOrganizacion": "1",
+        "Descripción": "Lugar amplio, frente con rejas verdes y parque donde los animales pueden correr",
+        "Actividades": ["castracion", "vacunacion", "veterinaria"],
+        "Direccion": "gelly y obes 800, muñiz"
+      },
+      {
+        "IdOrganizacion": "2",
+        "Descripción": "Una granja, donde los animales estan compartiendo espacio y una buena vida",
+        "Actividades": ["veterinaria", "cuidados", "adopcion", "guarderia"],
+        "Direccion": "Callao y corrientes, caba"
+      },
+      {
+        "IdOrganizacion": "3",
+        "Descripción": "Tenemos varios recintos, donde dejamos a los animales rescatados o encontrados",
+        "Actividades": ["adopcion", "rescate", "busqueda"],
+        "Direccion": "Peron 1005, moron"
+      },
+      {
+        "IdOrganizacion": "4",
+        "Descripción": "Es una veterinaria publica donde tratamos a mascotas en necesidad",
+        "Actividades": ["castracion", "vacunacion", "veterinaria"],
+        "Direccion": "loria 300, lomas"
+      },
+      {
+        "IdOrganizacion": "5",
+        "Descripción": "Cuartel de proteccion animal, lugar donde se gestionan casos de mascotas en abandono o maltratadas",
+        "Actividades": ["rescate", "cuidado", "adopcion", "proteccion"],
+        "Direccion": "Córdoba 200, caba"
+      }
     ]
-}
+  }
