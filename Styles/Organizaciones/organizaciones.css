@@ -1,0 +1,36 @@
+/* formulario-estilo.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+#map {
+    height: 400px;
+    width: 70%;
+    float: Right;
+}
+
+body {
+    background: #f7ffc1;
+  }
+
+html {
+    width: 100%;
+    height: 100%;
+    cursor: url("/img/cursor/pointer.png"), default;
+    cursor: url("/img/cursor/pointer.png"), pointer;
+  }
+
+  
+.card {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.card-container {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
