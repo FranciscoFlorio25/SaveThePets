@@ -10,6 +10,7 @@
             "Contacto": "raul@gmail.com",
             "Direccion": "batallon 800, capital federal, buenos aires",
             "Telefono": "11555600",
+            "EsVigente": "No Vigente",
             "Cuidados": {
                 "Vacunas": [],
                 "DetalleCuidado": "Es invalido, necesita una silla con ruedas para desplazarse."
@@ -25,6 +26,7 @@
             "Contacto": "gimena@yahoo.com.ar",
             "Direccion": "cordoba 1000, san miguel, buenos aires",
             "Telefono": "11228894",
+            "EsVigente": "Vigente",
             "Cuidados": {
                 "Vacunas": ["Rabia"],
                 "DetalleCuidado": "Esta castrado, se baña cada vez que sea necesario, necesita medicamento para una infección"
@@ -40,6 +42,7 @@
             "Contacto": "dfrancisco25@hotmail.com",
             "Direccion": "avenida mitre 500, polvorines, buenos aires",
             "Telefono": "15555910",
+            "EsVigente": "No Vigente",
             "Cuidados": {
                 "Vacunas": ["Rabia","Tos canina", "Parvovirus"],
                 "DetalleCuidado": "Se baña una vez por semana, hay que cepillarle los dientes y cortarle las uñas"
@@ -55,6 +58,7 @@
             "Direccion": "Presidente peron 451, san miguel, buenos aires",
             "Contacto": "MicaBellegia@gmail.com",
             "Telefono": "515111120",
+            "EsVigente": "Vigente",
             "Detalle": {
                 "LugarSuceso":"Ascuenaga al 500, Muñiz, Buenos Aires",
                 "FechaSuceso": "12/5/2022"
@@ -70,6 +74,7 @@
             "imagen": "img/MascotasPublicaciones/1200px-Bulldog_inglese.jpg",
             "Direccion": "gelly y obes 551, muñiz, buenos aires",
             "Telefono": "2111005",
+            "EsVigente": "Vigente",
             "Detalle": {
                 "LugarSuceso":"Presidente Peron al 5551, san miguel, Buenos Aires",
                 "FechaSuceso": "12/5/2023"
@@ -85,6 +90,7 @@
             "imagen": "img/MascotasPublicaciones/cane-meticcio.jpg",
             "Direccion": "Marco Ilia 450, san miguel, buenos aires",
             "Telefono": "11115000",
+            "EsVigente": "No Vigente",
             "Detalle": {
                 "LugarSuceso":"Mitre al 1150, polvirones, Buenos Aires",
                 "FechaSuceso": "6/1/2023"
