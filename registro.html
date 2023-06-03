@@ -12,7 +12,6 @@
     <body>
     <main>
       <form action="" name="formulario" id="formulario">
-          <div class="backPadre"><a class="back" href="index.html"><</a></div>
           <div class="form">
               <h1>Registro</h1>
               <div class="grupo">
@@ -42,10 +41,16 @@
               </div>
               
               <button type="submit" id="btn"> Registrarse</button>
+              <button class="button-volver" onclick="volverInicio()">Cancelar</button>
               <span class="warningIncomplete" id="warningIncomplete"></span>
           </div>
       </form>
     </main>
       <script src="verificarregistro.js"></script>
+      <script>
+        function volverInicio() {
+          window.location.href = "index.html"; // Cambia "index.html" con la ruta de tu página de inicio
+        }
+      </script>
   </body>
 </html>

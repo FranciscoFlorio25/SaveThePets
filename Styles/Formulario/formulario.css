@@ -1,21 +1,10 @@
+/* formulario-estilo.css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
-
 
 :root{
     --color-principal:#aa50d4;
     --color-secundario:#2c68a3;
-}
-
-
-*,
-::before,
-::after {
-    margin: 0 auto;
-    padding: 0 auto;
-    text-decoration: none;
-    list-style: none;
-
 }
 
 html {
@@ -24,8 +13,8 @@ html {
     cursor: url("/img/cursor/pointer.png"), default;
     cursor: url("/img/cursor/pointer.png"), pointer;
   }
-  
 
+  
 body {
     height: 100vh;
     background: rgb(170,80,212);
@@ -62,7 +51,6 @@ form {
 form .grupo {
     position: relative;
     margin: 35px 5px;
-
 }
 
 input {
@@ -75,10 +63,6 @@ input {
     font-weight: 100;
     font-size: 18px;
     color: #000000;
-}
-
-input:focus~.barra::before {
-    width: 100%;
 }
 
 input:focus {
@@ -110,7 +94,6 @@ input:valid~label {
     position: relative;
     display: block;
     width: 100%;
-
 }
 
 .barra::before {
@@ -150,26 +133,22 @@ button:hover {
     box-shadow: 10px 10px black;
 }
 
-.finalrTextForm  {
+
+.finalrTextForm {
     font-size: 12px;
     display: flex;
     justify-content: center;
-    color:#1e5acc;
-    margin:5px 10px;
+    color: #1e5acc;
+    margin: 5px 10px;
 }
-
-/* Clases para verifición con javascript*/
 
 .siVerificated {
     border-bottom: 1px solid #40940b;
-
 }
 
 .noVerificated {
     border-bottom: 1px solid #f44254;
 }
-
-/* Estilos de warnings*/
 
 .warning {
     font-size: 10px;
@@ -188,22 +167,38 @@ button:hover {
     margin-top: 3px;
 }
 
-/* Flecha de back */
 .backPadre {
     margin-top: 2%;
     margin-left: 5px;
     margin-bottom: 5px;
     background: var(--color-principal);
-    width:16%;
+    width: 16%;
     border-radius: 100px;
-
 }
 
 .back {
     display: flex;
     justify-content: center;
     font-size: 1em;
-    color:#fff;
+    color: #fff;
     font-family: 'Roboto';
     font-weight: 500;
 }
+
+@media (max-width: 740px) {
+    h1 {
+      font-size: 20px;
+    }
+    
+    form {
+      padding: 15px;
+    }
+    
+    .backPadre {
+      width: 40%;
+    }
+    
+    .back {
+      font-size: 0.8em;
+    }
+  }

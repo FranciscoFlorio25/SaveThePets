@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 :root{
     --color-principal:#aa50d4;
     --color-secundario:#2c68a3;
@@ -15,6 +14,13 @@
     list-style: none;
 
 }
+
+html {
+    width: 100%;
+    height: 100%;
+    cursor: url("/img/cursor/pointer.png"), default;
+    cursor: url("/img/cursor/pointer.png"), pointer;
+  }
 
 body {
 
@@ -31,17 +37,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'roboto';
+    font-family: 'Rubik';
     overflow: hidden;
 }
 
 h1 {
-    margin-top: 0px;
-    font-family: 'Merriweather Sans';
+    font-family: 'Montserrat';
     text-align: center;
-    font-weight: 900;
-    font-size: 30px;
-    color: var(--color-secundario);
+    margin-top: 10px;
+    font-size: 25px;
+    color: var(--color-principal);
+    text-transform: capitalize;
+    letter-spacing: 2px;
 }
 
 form {
@@ -121,27 +128,29 @@ input:focus~.barra::before {
     width: 100%;
 }
 
+
 button {
-    background: var(--color-principal);
-    transition: 0.3s ease all ;
-    background-size: 1px 100px;
-    font-family: 'Roboto';
+    margin: 10px;
     border: none;
-    display: block;
-    width: 70%;
-    margin: 10px auto;
-    height: 32px;
-    font-size: 15px;
+    height: 100%;
     color: #fff;
-    outline: 0;
-    margin-bottom: 15px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 8px;
+    background: #fff;
+    border: 3px solid black;
+    box-shadow: 5px 7px black;
+    font-family: 'Rubik', sans-serif;
+    background: var(--color-principal);
+    cursor: url("/img/cursor/mano.png"), pointer;
 }
 
-
-button:hover{
-    cursor: pointer;
-    width: 85%;
+button:hover {
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 10px 10px black;
 }
+
 
 .finalrTextForm  {
     font-size: 12px;
