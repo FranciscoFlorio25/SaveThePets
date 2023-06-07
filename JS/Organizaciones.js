@@ -4,11 +4,13 @@ function initMap() {
 
   // Crear mapa centrado en CABA y AMBA
   var map = L.map('map').setView(cabaAmba, 10);
+
   // Limitar mapa a la provincia de Buenos Aires
   var bounds = L.latLngBounds(
     L.latLng(-41, -64),
     L.latLng(-33, -56)
   );
+  
   map.setMaxBounds(bounds);
   map.on('drag', function() {
     map.panInsideBounds(bounds, { animate: false });
