@@ -160,14 +160,16 @@ h2 {
 }
 
 .buscador-container {
-  margin: 20px 0;
+  width: 80%;
+  margin: 10px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .buscador-input {
-  width: 250px;
+  width: 225px;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -237,5 +239,22 @@ h2 {
   .perdido {
     font-size: small;
     text-align: center;
+  }
+
+  .buscador-input {
+    width: 175px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .buscador-container {
+    margin-left: 25px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
