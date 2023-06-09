@@ -54,12 +54,20 @@ html {
   border: 1px solid black;
 }
 
-.card-container ul li{
+.card-container ul{
   font-size: 16px;
   list-style: none;
   margin-left: 30px;
   font-family: 'Montserrat', sans-serif;
 }
+
+.card-container li{
+  font-size: 14px;
+  list-style: none;
+  margin-left: 150px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 .card-container:hover {
   width: 45%;
@@ -111,9 +119,9 @@ html {
 
 @media screen and (max-width: 768px) {
   #map {
-    width: 50%;
+    width: 45%;
     right: 0;
-    height: 50vh;
+    height: 65%;
     bottom: 0;
     margin-top: 0;
     top: unset;
@@ -121,32 +129,35 @@ html {
   }
 
   .card-container {
-    width: 50%;
+    width: 45%;
     margin-left: 0;
   }
 
   #map-container {
     width: 50%;
+    height: 65%;
     padding-right: 0;
   }
 }
 
 @media screen and (max-width: 576px) {
   .card-container {
-    width: 50%;
+    width: 45%;
     margin-top: 0;
   }
   #map-container {
-    width: 50%;
+    width: 45%;
+    height: 65%;
     padding-right: 0;
   }
   #map {
-    width: 50%;
+    width: 45%;
     right: 0;
-    height: 50vh;
+    height: 65%;
     bottom: 0;
     margin-top: 0;
     top: unset;
     border-radius: 0;
   }
+
 }

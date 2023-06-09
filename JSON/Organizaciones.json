@@ -2,33 +2,53 @@
     "Organizaciones": [
       {
         "IdOrganizacion": "1",
+        "Nombre": "Hogar Canino",
         "Descripción": "Lugar amplio, frente con rejas verdes y parque donde los animales pueden correr",
-        "Actividades": ["castracion", "vacunacion", "veterinaria"],
-        "Direccion": "gelly y obes 800, muñiz"
+        "Actividades": ["jornadas de talleres canino", "reunion social de mascotas", "taller de pediatria canina"],
+        "Servicios": ["Guarderia","Entrenamiento","Paseo"],
+        "Direccion": "gelly y obes 800, muñiz",
+        "Horarios":"12:00 a 20:00",
+        "Telefono": "51190592209"
       },
       {
         "IdOrganizacion": "2",
+        "Nombre": "Granja McDonnals",
         "Descripción": "Una granja, donde los animales estan compartiendo espacio y una buena vida",
-        "Actividades": ["veterinaria", "cuidados", "adopcion", "guarderia"],
-        "Direccion": "Callao y corrientes, caba"
+        "Actividades": ["Paseo al aire libre", "Competición", "Fiesta de adopción"],
+        "Servicios": ["vacunacion","castracion","guarderia","adopcion"],
+        "Direccion": "Callao y corrientes, caba",
+        "Horarios":"9:00 a 17:00",
+        "Telefono": "11150905545"
       },
       {
         "IdOrganizacion": "3",
+        "Nombre":"Rescate Jorge",
         "Descripción": "Tenemos varios recintos, donde dejamos a los animales rescatados o encontrados",
-        "Actividades": ["adopcion", "rescate", "busqueda"],
-        "Direccion": "Peron 1005, moron"
+        "Actividades": ["Visitas guiadas", "Jornada de proteccion animal", "Visitas escolares"],
+        "Servicios": ["adopcion","rescate","busqueda"],
+        "Direccion": "Peron 1005, moron",
+        "Horarios":"9:00 a 18:00",
+        "Telefono": "11150905545"
       },
       {
         "IdOrganizacion": "4",
+        "Nombre": "Veterinaria nueva vida",
         "Descripción": "Es una veterinaria publica donde tratamos a mascotas en necesidad",
-        "Actividades": ["castracion", "vacunacion", "veterinaria"],
-        "Direccion": "loria 300, lomas"
+        "Actividades": ["Entrenamiento de veterinarios", "Taller de alimentacion animal", "Taller sobre cuidado animal"],
+        "Servicios": ["castracion", "vacunacion", "veterinaria"],
+        "Direccion": "loria 300, lomas",
+        "Horarios":"9:00 a 00:00",
+        "Telefono": "50999880045"
       },
       {
         "IdOrganizacion": "5",
+        "Nombre": "Greenplace",
         "Descripción": "Cuartel de proteccion animal, lugar donde se gestionan casos de mascotas en abandono o maltratadas",
-        "Actividades": ["rescate", "cuidado", "adopcion", "proteccion"],
-        "Direccion": "Córdoba 200, caba"
+        "Actividades": ["Charla sobre medio ambiente", "Actividades de rescate animal"],
+        "Servicios": ["rescate", "cuidado", "adopcion", "proteccion"],
+        "Direccion": "Córdoba 200, caba",
+        "Horarios":"00:00 a 23:00",
+        "Telefono": "445659048213"
       }
     ]
   }
