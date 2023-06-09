@@ -102,7 +102,7 @@ function rellenarConInformacionCorrespondiente(e) {
     $a.innerHTML += `${data[id].Contacto}`;
 
     $vigente.innerHTML += `Estado Publicacion: ${data[id].EsVigente}`;
-    $a.innerHTML += `${data[id].Contacto}`;
+    
 
     $div.appendChild($h2);
     $div.appendChild($img);
