@@ -12,39 +12,49 @@
   <main>
     <div class="container">
       <form id="registroForm" class="formulario">
-        <h1>Formulario de Registro de Organizaciones</h1>
+        <h1>¡Registra tu Organización!</h1>
         <div class="grupo">
-          <input type="text" id="nombre" name="nombre" required>
+          <input type="text" id="nombre" name="nombre" >
           <span class="barra"></span>
           <label for="nombre">Nombre:</label>
+          <span class="warning" id="warning"></span>
         </div>
         <div class="grupo">
-          <input type="text" id="descripcion" name="descripcion" required>
+          <input type="text" id="descripcion" name="descripcion" >
           <span class="barra"></span>
           <label for="descripcion">Descripción:</label>
+          <span class="warning" id="warning"></span>
         </div>
         <div class="grupo">
-          <input type="text" id="actividades" name="actividades" required>
+          <input type="text" id="actividades" name="actividades" >
           <span class="barra"></span>
           <label for="actividades">Actividades:</label>
+          <span class="warning" id="warning"></span>
         </div>
         <div class="grupo">
-          <input type="text" id="direccion" name="direccion" required>
+          <input type="text" id="direccion" name="direccion" >
           <span class="barra"></span>
           <label for="direccion">Dirección:</label>
+          <span class="warning" id="warning"></span>
         </div>
         <div class="grupo">
-          <input type="text" id="horarios" name="horarios" required>
+        <select name="select" id="direccionesSelect"></select>
+        </div>
+        <div class="grupo">
+          <input type="text" id="horarios" name="horarios" >
           <span class="barra"></span>
           <label for="horarios">Horarios:</label>
+          <span class="warning" id="warning"></span>
         </div>
         <div class="grupo">
-          <input type="number" id="telefono" name="telefono" required>
+          <input type="tel" id="telefono" name="telefono" placeholder="número celular o número de línea">
           <span class="barra"></span>
           <label for="telefono">Teléfono:</label>
+          <span class="warning" id="warning"></span>
         </div>
-        <button type="submit">Registrar</button>
-        <button class="button-volver" onclick="volverInicio()">Cancelar</button>
+        <span class="warning" id="mensajeError"></span>
+        <button type="submit" id="EnviarDatos">Registrar</button>
+        <a href="index.html">Cancelar</a>
       </form>
     </div>
   </main>

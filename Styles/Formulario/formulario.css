@@ -16,9 +16,8 @@ html {
 
   
 body {
-    height: 100vh;
-    background: rgb(170,80,212);
-    background: linear-gradient(0deg, rgba(170,80,212,1) 0%, rgba(44,104,163,1) 100%); 
+    height: 110vh;
+    background:#feffe0;
 
     display: flex;
     justify-content: center;
@@ -27,20 +26,21 @@ body {
 }
 
 h1 {
-    font-family: 'Montserrat';
-    text-align: center;
+    font-size: 22px;
+    color:#EF476F;
     margin-top: 10px;
-    font-size: 25px;
-    color: var(--color-principal);
-    text-transform: capitalize;
+    text-align: center;
     letter-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
 }
 
 form {
     background: #fff;
     padding: 15px 35px;
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+    border:3px solid black;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
 }
 
 .form {
@@ -51,6 +51,16 @@ form {
 form .grupo {
     position: relative;
     margin: 35px 5px;
+}
+
+select{
+    width:100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
 }
 
 input {
@@ -113,6 +123,7 @@ input:focus~.barra::before {
 
 button {
     margin: 10px;
+    padding:5px;
     border: none;
     height: 100%;
     color: #fff;
