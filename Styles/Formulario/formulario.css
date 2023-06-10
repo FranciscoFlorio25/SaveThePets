@@ -7,6 +7,20 @@
     --color-secundario:#2c68a3;
 }
 
+.ajs-success {
+    font-size:15px;
+    color: white;
+    border-radius: 22px;
+    background-color: #009f00;
+    font-family: 'Montserrat';
+}
+
+.ajs-message {
+    background-color: #0d2645;
+    border-radius: 22px;
+    color: white;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -16,13 +30,12 @@ html {
 
   
 body {
-    height: 110vh;
-    background:#feffe0;
-
     display: flex;
-    justify-content: center;
+    height: 140vh;
     align-items: center;
     font-family: 'Rubik';
+    background:#feffe0;
+    justify-content: center;
 }
 
 h1 {
@@ -48,7 +61,7 @@ form {
     margin: auto;
 }
 
-form .grupo {
+.grupo {
     position: relative;
     margin: 35px 5px;
 }
@@ -121,6 +134,30 @@ input:focus~.barra::before {
     width: 100%;
 }
 
+.grupo a{
+    width:15%;
+    padding:3px;
+    border: none;
+    display: flex;
+    outline: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top:15px;
+    border-radius: 8px;
+    background: #fff;
+    border: 3px solid black;
+    box-shadow: 5px 7px black;
+    font-family: 'Rubik', sans-serif;
+    background: var(--color-principal);
+    cursor: url("/img/cursor/mano.png"), pointer;
+}
+
+.grupo a:hover{
+    color: #fff;
+    transform: translateY(-8px);
+    box-shadow: 10px 10px black;
+}
+
 button {
     margin: 10px;
     padding:5px;
@@ -167,6 +204,7 @@ button:hover {
     display: flex;
     justify-content: start;
     margin-top: 3px;
+    margin-bottom:10px;
 }
 
 .warningIncomplete {

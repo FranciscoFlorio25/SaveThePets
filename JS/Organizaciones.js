@@ -146,8 +146,10 @@ function initMap() {
 
 // Función para normalizar una dirección y obtener las coordenadas
 function normalizeAddress(direccion) {
-  var apiUrl = "http://servicios.usig.buenosaires.gob.ar/normalizar/";
-  var url = apiUrl + "?direccion=" + direccion;
+  
+  var apiUrl = "http://servicios.usig.buenosaires.gob.ar/normalizar/"
+
+  var url = `${apiUrl}?direccion=${direccion}`
 
   return fetch(url)
     .then(response => response.json())

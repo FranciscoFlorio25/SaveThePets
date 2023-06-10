@@ -6,7 +6,11 @@
   <link rel="stylesheet" type="text/css" href="/Styles/header/header.css">
   <link rel="stylesheet" type="text/css" href=/Styles/Formulario/formulario.css>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.min.css" integrity="sha512-IXuoq1aFd2wXs4NqGskwX2Vb+I8UJ+tGJEu/Dc0zwLNKeQ7CW3Sr6v0yU3z5OQWe3eScVIkER4J9L7byrgR/fA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 
 <body>
   <main>
@@ -27,9 +31,17 @@
         </div>
         <div class="grupo">
           <input type="text" id="actividades" name="actividades" >
-          <span class="barra"></span>
           <label for="actividades">Actividades:</label>
+          <span class="barra"></span>
           <span class="warning" id="warning"></span>
+          <a id="AgregarActividad">Agregar</a>
+        </div>
+        <div class="grupo">
+          <input type="text" id="servicios" name="servicios" >
+          <span class="barra"></span>
+          <label for="actividades">Servicios:</label>
+          <span class="warning" id="warning"></span>
+          <a id="AgregarServicio">Agregar</a>
         </div>
         <div class="grupo">
           <input type="text" id="direccion" name="direccion" >
@@ -59,12 +71,8 @@
     </div>
   </main>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js" integrity="sha512-JnjG+Wt53GspUQXQhc+c4j8SBERsgJAoHeehagKHlxQN+MtCCmFDghX9/AcbkkNRZptyZU4zC8utK59M5L45Iw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="/js/RegistroOrganizacion.js"></script>
 </body>
-<script>
-  function volverInicio() {
-    window.location.href = "index.html"; // Cambia "index.html" con la ruta de tu página de inicio
-  }
-</script>
 </html>
 
