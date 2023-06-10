@@ -31,7 +31,7 @@ botonServicios.addEventListener('click', () => {
   if(servicios.value != ''){
     alertify.set('notifier', 'position', 'top-right');
     alertify.success('¡Servicio agregado!');
-    serviciosIngresados.push(actividades.value)
+    serviciosIngresados.push(servicios.value)
     serviciosyActividades['servicios'] = true
   }
 
@@ -158,7 +158,10 @@ function enviarDatos(){
 
   localStorage.setItem('nuevaOrganizacion', datosJSON);
   console.log(datosDeFormulario)
-  window.location.href = "Organizaciones.html"
+
+  setTimeout(() => {
+    window.location.href = "Organizaciones.html"
+  }, 1200);
 }
 
 agregarEventoInputs()
@@ -179,12 +182,7 @@ document.getElementById("registroForm").addEventListener("submit", function(even
   if (todosCompletos && arraysCompletos) {
     //Alertas visuales para el usuario
     alertify.message('Enviando datos...');
-    
-    setTimeout(() => {
-      enviarDatos();
-    }, 1000);
-
-    formulario.reset();
+    enviarDatos();
   } else if (!arraysCompletos && todosCompletos) {
     console.log('soy arrays',arraysCompletos)
     console.log('soy campos completos',todosCompletos)
